@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    list-style: none;
+    font-family: fino-sans, sans-serif;
+    color: var(--var-color-one);
+    scroll-behavior: smooth;
+
+}
+
+body,
+html {
+
+    background-color: var(--var-color-three);
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    /* -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease; */
+    transition: all 1s ease-in;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+    
+
+
+}
+
+
+
+:root {
+    --var-color-one: #212121;
+    --var-color-two: #ffffff;
+    --var-color-three: #000000;
+    /* base colours */
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 5 5 5px grey;
+    /* border-radius: 10px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: whitesmoke;
+    /* border-radius: 10px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: lime;
+}
+
+
+#NameBrand {
+    font-family: fino-sans, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: larger;
+
+
+
+
+}
+
+#TopNav {
+    z-index: 1030;
+    padding-inline-end: 100px;
+
+    position: sticky;
+    background-color: var(--var-color-three);
+
+
+}
+
+#TopNav a {
+
+    font-family: fino-sans, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: larger;
+    justify-content: left;
+
+}
+
+#TopNav a:hover {
+    text-shadow: 10px 10px 10px #000000;
+
+    filter: dropshadow(color=#000000, offx=3, offy=3);
+    border-bottom: 3px solid white;
+
+}
+
+.cursor
+{
+
+    position: fixed;
+    border-radius: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events:none;
+    /* left: -100px;
+    top: 50%; */
+    mix-blend-mode: difference;
+    background-color: 
+  white;
+    z-index: 10000;
+    border: 3px solid 
+  white;
+    height: 60px;
+    width: 60px;
+    transition: all 300ms ease-in;
+    /* transition: transform 0.3s ease; */
+
+}
+
+.header-container {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-color: var(--var-color-three);
+}
+
+.container-alignment {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.layout-container {
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    background-color: var(--var-color-three);
+}
+
+.Header-text {
+    font-size: 10rem;
+    color: var(--var-color-two);
+
+}
+
+.Sub-text {
+    font-size: 4rem;
+    color: var(--var-color-two);
+    font-family: forma-djr-banner, sans-serif;
+
+
+
+}
+
+.spacing {
+    padding-top: 5vh;
+    padding-bottom: 1vh;
+    border-bottom: 2px solid white;
+
+}
+
+/* .project-Details-container
+  {
+    background-color: var(--var-color-three);
+
+
+  } */
+.Image-Banner {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.photo-image {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.design {
+    justify-content: start;
+    text-align: start;
+    padding-left: 1rem;
+
+}
+
+.develop {
+    justify-content: flex-end;
+    text-align: end;
+    padding-right: 1rem;
+
+}
+
+.deploy{
+    justify-content: start;
+    text-align: start;
+    
+
+}
+
+
+
+
+
+
+/* grid done in scss file for neatness */
+
