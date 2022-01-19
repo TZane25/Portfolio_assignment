@@ -1,0 +1,599 @@
+.grid {
+    display: grid;
+    grid-gap: 16px;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    padding: 16px;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @media (min-width: 960px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .col {
+        background-color: white;
+    }
+    .col img {
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    }
+}
+.project-info-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding-top: 5vh;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @media (min-width: 960px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .col {
+        background-color: transparent;
+        font-family: forma-djr-banner, sans-serif;
+
+        border-bottom: 2px solid white;
+        color: white;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+    .coltext {
+        justify-content: start;
+        font-size: 1.5rem;
+        letter-spacing: 4px;
+    }
+    .coltextend {
+        font-size: 1.5rem;
+        justify-content: end;
+        letter-spacing: 2px;
+    }
+}
+.planning-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media (min-width: 960px) {
+        grid-template-columns: repeat(2, 1fr 2fr);
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(1, 1fr 2fr 1fr);
+    }
+    .col {
+        font-family: forma-djr-banner, sans-serif;
+
+        width: 100%;
+        height: 70%;
+        color: white;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+    .col img {
+        border: 2px solid white;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .sub-header {
+        color: white;
+        font-family: forma-djr-banner, sans-serif;
+        letter-spacing: 4px;
+    }
+    .text-ex {
+        padding-top: 2vh;
+        letter-spacing: 3px;
+        color: white;
+        font-size: 2em;
+        font-family: forma-djr-banner, sans-serif;
+    }
+    .center {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+.subdesign-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding-top: 20vh;
+   
+   
+
+    .col {
+        font-family: forma-djr-banner, sans-serif;
+
+        width: 100%;
+        height: 70%;
+        color: white;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        border-bottom: 3px solid white;
+        
+    }
+    .coltext {
+        justify-content: start;
+        font-size: 5rem;
+        letter-spacing: 4px;
+        // border-bottom: 3px solid white;
+        
+
+    }
+    .coltext img
+    {
+        width: 100%;
+        height: 70%;
+        filter:invert(48%) sepia(40%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+        fill: white;
+    }
+    @media (min-width: 768px) {
+        grid-template-columns: 2fr 1fr;
+    }
+    @media (min-width: 960px) {
+        grid-template-columns: 2fr 1fr;
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+.design-header{
+    display: grid;
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding-top: 10vh;
+   
+
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 960px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    .col {
+        font-family: forma-djr-banner, sans-serif;
+
+        width: 100%;
+        height: 70%;
+        color: white;
+        padding-top: 10vh;
+       
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+    .coltext
+    {
+        padding-top: 5vh;
+        justify-content: start;
+        font-size: 2rem;
+        letter-spacing: 4px;
+
+    }
+
+}
+.design-grid
+{
+    display: grid;
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media (min-width: 960px) {
+        grid-template-columns: repeat(2, 1fr 2fr);
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(1, 2fr 2fr);
+    }
+    .col {
+        font-family: forma-djr-banner, sans-serif;
+
+        width: 100%;
+        height: 70%;
+        color: white;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+    .coltext
+    {
+        
+        justify-content: start;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        
+
+    }
+    .coltext h2
+    {
+        justify-content: start;
+        font-size: 2rem;
+        font-family: forma-djr-banner, sans-serif;
+        letter-spacing: 4px;
+        color: white;
+        
+
+    }
+    .coltext h3
+    {
+        justify-content: end;
+        font-size: 1rem;
+        font-family: forma-djr-banner, sans-serif;
+        letter-spacing: 4px;
+        color: white;
+        
+
+    }
+    .col img {
+        border: 2px solid white;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .sub-header {
+        color: white;
+        font-family: forma-djr-banner, sans-serif;
+        letter-spacing: 4px;
+    }
+    .text-ex {
+        padding-top: 2vh;
+        letter-spacing: 3px;
+        color: white;
+        font-family: forma-djr-banner, sans-serif;
+    }
+    .center {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+.subDev-grid
+{
+    display: grid;
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+   
+
+    .col {
+        font-family: forma-djr-banner, sans-serif;
+
+        width: 100%;
+        height: 70%;
+        color: white;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        border-bottom: 3px solid white;
+        
+    }
+    .coltext {
+        justify-content: end;
+        font-size: 5rem;
+        letter-spacing: 4px;
+        // border-bottom: 3px solid white;
+        
+
+    }
+    .coltext img
+    {
+        width: 100%;
+        height: 70%;
+        filter:invert(48%) sepia(40%) saturate(2300%) hue-rotate(86deg) brightness(118%) contrast(119%);
+        
+    }
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 2fr;
+    }
+    @media (min-width: 960px) {
+        grid-template-columns: 1fr 2fr;
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr 2fr;
+    }
+
+
+}
+.proto-grid
+{
+    display: grid;
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @media (min-width: 960px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .col {
+        font-family: forma-djr-banner, sans-serif;
+        width: 100%;
+        height: 70%;
+        color: white;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+    .coltext
+    {
+        justify-content: start;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        
+
+    }
+    .col img {
+        border: 2px solid white;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .coltext h2
+    {
+        justify-content: start;
+        font-size: 2rem;
+        font-family: forma-djr-banner, sans-serif;
+        letter-spacing: 4px;
+        color: white;
+        
+
+    }
+
+}
+.subdeploy-grid
+{
+    display: grid;
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+   
+
+    .col {
+        font-family: forma-djr-banner, sans-serif;
+
+        width: 100%;
+        height: 70%;
+        color: white;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        border-bottom: 3px solid white;
+        
+    }
+    .coltext {
+        justify-content: start;
+        font-size: 5rem;
+        letter-spacing: 4px;
+
+        
+
+    }
+    
+
+    @media (min-width: 768px) {
+        grid-template-columns: 2fr 1fr;
+    }
+    @media (min-width: 960px) {
+        grid-template-columns: 2fr 1fr;
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: 2fr 1fr;
+    }
+   
+}
+.deploy-grid
+{ 
+    display: grid;
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @media (min-width: 960px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .col {
+        font-family: forma-djr-banner, sans-serif;
+        width: 100%;
+        height: 70%;
+        color: white;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+    .coltext
+    {
+        justify-content: start;
+        font-size: 1rem;
+        letter-spacing: 4px;
+        
+
+    }
+    .col img {
+        border: 2px solid white;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .coltext h2
+    {
+        justify-content: start;
+        font-size: 2rem;
+        font-family: forma-djr-banner, sans-serif;
+        letter-spacing: 4px;
+        color: white;
+        
+
+    }
+    
+
+}
+.subcar-grid
+{
+    display: grid;
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+   
+
+    .col {
+        font-family: forma-djr-banner, sans-serif;
+
+        width: 100%;
+        height: 70%;
+        color: white;
+        padding-top: 5vh;
+        padding-bottom: 15vh;
+        border-bottom: 3px solid white;
+        
+    }
+    .coltext {
+        justify-content: end;
+        font-size: 4rem;
+        letter-spacing: 4px;
+        
+        // border-bottom: 3px solid white;
+        
+
+    }
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+    @media (min-width: 960px) {
+        grid-template-columns: 1fr;
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: 2fr;
+    }
+
+
+}
+.carousel-grid
+{
+    display: grid;
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+       
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+    @media (min-width: 960px) {
+        grid-template-columns: 1fr;
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr;
+    }
+    .space
+    {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+
+
+}
+
+.footer-grid
+{
+    display: grid;
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+       
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+    @media (min-width: 960px) {
+        grid-template-columns: 1fr;
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .col {
+        font-family: forma-djr-banner, sans-serif;
+
+        width: 100%;
+        height: 70%;
+        color: white;
+        padding-top: 5vh;
+        padding-bottom: 15vh;
+        border-top: 3px solid white;
+        
+    }
+    .coltext {
+        justify-content: end;
+        font-size: 2rem;
+        letter-spacing: 4px;
+        
+        
+        
+
+    }
+
+}
+
+
