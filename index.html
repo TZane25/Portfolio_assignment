@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" oncontextmenu="return false">
 
 <head>
     <meta charset="UTF-8">
@@ -641,6 +641,11 @@
 
 
         });
+        
+        $(document).bind("contextmenu",function(e) {  
+	        e.preventDefault(); 
+ 
+        });
 
         $(document).ready(function () {
             var scroll_pos = 0;
@@ -761,7 +766,8 @@
             observer2.observe(item2);
 
         })
-
+        
+ 
 
 
 
