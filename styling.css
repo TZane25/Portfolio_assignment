@@ -9,13 +9,11 @@
     font-family: fino-sans, sans-serif;
     color: var(--var-color-two);
     scroll-behavior: smooth;
-
 }
 
 body,
 html {
-
-    background-color: var(--var-color-one);
+    background-color: var(--var-color-two);
     width: 100%;
     height: auto;
     display: inline-block;
@@ -25,16 +23,11 @@ html {
     transition: all 1s ease-in;
     justify-content: center;
     align-items: center;
-
-
 }
-
-
-
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 20px;
 }
 
 /* Track */
@@ -45,7 +38,7 @@ html {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: whitesmoke;
+    background: lime;
     /* border-radius: 10px; */
 }
 
@@ -60,26 +53,23 @@ html {
     font-weight: 500;
     font-style: normal;
     font-size: larger;
-
+    font-size: 7vh;
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 #TopNav {
     z-index: 1030;
     position: sticky;
-
 }
 
 #TopNav a {
-
     font-family: fino-sans, sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: larger;
     justify-content: center;
-
 }
 
 #TopNav a:hover {
@@ -90,32 +80,20 @@ html {
 }
 
 #cursor {
-
     position: fixed;
     border-radius: 100%;
     transform: translateX(-50%) translateY(-50%);
     pointer-events: none;
-    /* left: -100px;
-    top: 50%; */
+    left: -100px;
+    top: 50%;
     mix-blend-mode: difference;
-    background-color:
-        white;
+    background-color: white;
     z-index: 10000;
     border: 3px solid white;
     height: 60px;
     width: 60px;
     transition: all 300ms ease-in;
-    /* transition: transform 0.3s ease; */
-
-}
-
-#Hamburger {
-    display: hidden;
-
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    text-align: center;
+    transition: transform 0.3s ease;
 }
 
 :root {
@@ -124,20 +102,12 @@ html {
     /* base colours */
 }
 
-
-/* @font-face {
-    font-family: fino-sans;
-    src: url("https://use.typekit.net/wfv0jhd.css");
-} */
-/* word reveal */
 .reveal {
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     text-align: center;
     align-items: center;
-    
-
 }
 
 .reveal h1 {
@@ -150,31 +120,25 @@ html {
 }
 
 .reveal ul {
-
     top: 200vh;
     display: block;
     justify-content: flex-start;
     margin-top: 4rem;
-
-
 }
 
 .reveal ul li {
-
     height: 4rem;
     display: flex;
     overflow: hidden;
     margin-bottom: 0.6rem;
-    
+
     justify-content: flex-start;
     margin: 0.3rem;
-   
-    color: lime;
 
+    color: lime;
 }
 
 .reveal ul li span {
-
     display: block;
     line-height: 4rem;
     font-size: 5rem;
@@ -184,38 +148,27 @@ html {
     font-weight: 400;
     font-style: normal;
     padding-bottom: 10vh;
-   
-
 }
 
 .reveal ul li span.active {
     transform: translateY(10%);
     transition: all 1s ease;
-
 }
 
 .reveal ul li:hover {
     opacity: 0.5;
     cursor: pointer;
-
-
 }
 
 .reveal ul li span:hover {
-
     cursor: pointer;
     color: lime;
-
-
-
 }
 
 /* .icon
 {
     justify-content: flex-end;
 } */
-
-
 
 /* infinite loop on banner */
 #infinite {
@@ -227,9 +180,9 @@ html {
 }
 
 #infinite h1 {
-
     position: relative;
     top: 30vh;
+    left: 2vw;
     width: 100%;
 
     text-align: center;
@@ -237,7 +190,6 @@ html {
     letter-spacing: 2px;
     z-index: 2;
     pointer-events: none;
-
 }
 
 #infinite .scroll {
@@ -254,8 +206,9 @@ html {
     text-transform: uppercase;
     animation: animation 50s linear infinite;
     animation-duration: 60s;
-    animation-delay: -10s;
+    animation-delay: none;
     pointer-events: none;
+    animation-iteration-count: infinite;
 }
 
 #infinite .scroll div span {
@@ -269,7 +222,6 @@ html {
     100% {
         transform: translateX(100%);
         /* transform:translateY(50%); */
-
     }
 
     0% {
@@ -278,23 +230,23 @@ html {
 }
 
 #infinite .scroll.text1 {
-    transform: rotate(120deg)translateY(150px) translateX(-200px);
-    box-shadow: 0 5px 15px rgna(0, 0, 0, .5);
+    transform: rotate(120deg) translateY(150px) translateX(-200px);
+    box-shadow: 0 5px 15px rgna(0, 0, 0, 0.5);
 }
 
 #infinite .scroll.text2 {
     transform: rotate(-380deg) translateY(200px) translateX(-200px);
-    box-shadow: 0 5px 15px rgna(0, 0, 0, .5);
+    box-shadow: 0 5px 15px rgna(0, 0, 0, 0.5);
 }
 
 #infinite .scroll.text3 {
     transform: rotate(-380deg) translateY(-200px) translateX(-200px);
-    box-shadow: 0 5px 15px rgna(0, 0, 0, .5);
+    box-shadow: 0 5px 15px rgna(0, 0, 0, 0.5);
 }
 
 #infinite .scroll.text4 {
     transform: rotate(300deg) translateY(150px) translateX(-200px);
-    box-shadow: 0 5px 15px rgna(0, 0, 0, .5);
+    box-shadow: 0 5px 15px rgna(0, 0, 0, 0.5);
 }
 
 .AboutPart h1 {
@@ -304,7 +256,6 @@ html {
     justify-content: flex-start;
     border-bottom: 2px solid white;
     padding-bottom: 50px;
-
 }
 
 .portfolio h1 {
@@ -315,10 +266,6 @@ html {
     border-bottom: 2px solid white;
     padding-top: 50px;
     padding-bottom: 50px;
-
-
-
-
 }
 
 .portfolio .starColour {
@@ -326,7 +273,6 @@ html {
     fill: white;
     height: 10vh;
     width: 10vw;
-
 }
 
 .gallery-container {
@@ -338,8 +284,6 @@ html {
     margin-left: auto;
     padding-right: 50px;
     padding-left: 50px;
-
-
 }
 
 .gallery-grid {
@@ -358,9 +302,6 @@ html {
     row-gap: 200px; */
     /* -ms-grid-rows: auto; */
     /* grid-template-rows: auto; */
-
-
-
 }
 
 .w-layout-grid {
@@ -377,18 +318,13 @@ html {
 
     /* grid-column-gap: 16px; 
     column-gap: 20px; */
-
-
 }
 
 .gallery-card {
-
     margin-top: 10vh;
 
     cursor: none;
     overflow: hidden;
-
-
 }
 
 .gallery-card::before {
@@ -399,8 +335,6 @@ html {
     position: absolute;
     background: conic-gradient(darkgreen, lime, lawngreen, lightgreen, white, lightgreen, lawngreen, lime, darkgreen);
     animation: spin 6s linear infinite;
-
-
 }
 
 @keyframes spin {
@@ -451,19 +385,12 @@ html {
     background-color: #16161d;
     z-index: -10;
     inset: 3px;
-
-
 }
-
-
-
-
 
 .w-inline-block {
     max-width: 100%;
     display: inline-block;
 }
-
 
 .gallery-card-title {
     display: -webkit-box;
@@ -479,15 +406,12 @@ html {
     -webkit-align-items: flex-end;
     align-items: flex-end;
     -ms-flex-align: end;
-
-
 }
 
 .gallery-card-title .heading {
     text-align: left;
     font-size: 4rem;
     margin: 2vh;
-
 }
 
 .gallery-card-title .headingDate {
@@ -497,8 +421,6 @@ html {
     font-family: forma-djr-banner, sans-serif;
     font-weight: 400;
     font-style: normal;
-
-
 }
 
 .gallery-card-footer .CardIdea {
@@ -509,8 +431,6 @@ html {
     font-weight: 400;
     font-style: normal;
     margin: 2vh;
-
-
 }
 
 .gallery-card-icon {
@@ -535,8 +455,6 @@ html {
     /* -webkit-align-items:center;
     -ms-flex-align: center; */
     align-items: center;
-
-
 }
 
 .gallery-card-wrapper {
@@ -554,7 +472,6 @@ html {
     height: 100%;
     background-color: black;
 
-
     /* -webkit-box-pack: center;
     -webkit-justify-content:center;
     -ms-flex-pack: center; */
@@ -562,8 +479,6 @@ html {
     /* -webkit-align-items:center;
     -ms-flex-align: center; */
     align-items: center;
-
-
 }
 
 .gallery-card-wrapper img {
@@ -607,18 +522,14 @@ html {
         transform: skew(1, 1, 1);
         transform: scale3d(1, 1, 1);
         transition: 0.1s ease-out;
-
-
     }
 
     100% {
         transform: skew(2, 2, 2);
         transform: scale3d(1, 1, 1);
         transition: 0.1s ease-out;
-
     }
 }
-
 
 .gallery-card-footer {
     display: -webkit-box;
@@ -644,12 +555,9 @@ html {
 
     padding-bottom: 20vh;
     padding-top: 20vh;
-
-
 }
 
 .CardIdea {
-
     letter-spacing: 0.2rem;
 }
 
@@ -669,12 +577,9 @@ html {
     grid-template-rows: auto;
 
     border-bottom: 2px solid white;
-
-
 }
 
 .info-container {
-
     position: relative;
     width: 100%;
     height: 100%;
@@ -683,9 +588,6 @@ html {
     margin-left: auto;
     padding-right: 50px;
     padding-left: 50px;
-
-
-
 }
 
 /* .info-grid
@@ -695,13 +597,11 @@ html {
     -webkit-box-align: center;
     -webkit-align-items:center; */
 
-
 .design-concept {
     position: relative;
     display: inline-block;
     width: 100%;
     margin-bottom: 2vh;
-
 }
 
 .design-concept .heading {
@@ -710,9 +610,6 @@ html {
     margin-bottom: 1rem;
     margin-top: 1rem;
     padding-bottom: 1vh;
-
-
-
 }
 
 .design-concept .headingBig {
@@ -721,8 +618,6 @@ html {
     margin-bottom: 5rem;
     border-bottom: 2px solid white;
     justify-content: flex-start;
-
-
 }
 
 .headingConcept {
@@ -731,7 +626,6 @@ html {
     margin-bottom: 1rem;
     padding-bottom: 4vh;
     /* margin-top: 1rem; */
-
 }
 
 .design-concept .icon {
@@ -742,8 +636,6 @@ html {
     padding-bottom: 10vh;
     border-bottom: 2px solid white;
     justify-content: flex-end;
-
-
 }
 
 .design-concept .text {
@@ -753,20 +645,29 @@ html {
     font-weight: 200;
     font-style: normal;
     letter-spacing: 3px;
+   
 }
-
+.nodeco a{
+    text-decoration: none;
+    color:white;
+    font-family: forma-djr-banner, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 3px;
+    
+}
 .design-info {
     display: inline-block;
     overflow: hidden;
     text-align: left;
     margin-top: 10vh;
     margin-bottom: 10vh;
+    
 }
 
 .about {
     padding-top: 50px;
     padding-bottom: 50px;
-
 }
 
 .P-section {
@@ -782,7 +683,6 @@ html {
     margin-left: auto;
     padding-right: 50px;
     padding-left: 50px;
-
 }
 
 .about-grid {
@@ -794,7 +694,6 @@ html {
     grid-template-rows: auto;
     justify-content: center;
     align-items: center;
-
 }
 
 .AnimImage {
@@ -809,9 +708,6 @@ html {
     overflow: visible;
     width: 100%;
     height: 100%;
-
-
-
 }
 
 @keyframes spinning {
@@ -819,7 +715,6 @@ html {
         transform: rotate(360deg);
     }
 }
-
 
 .aboutText {
     display: block;
@@ -829,8 +724,6 @@ html {
     font-weight: 400;
     font-style: normal;
     letter-spacing: 3px;
-
-
 }
 
 .appear {
@@ -839,27 +732,23 @@ html {
 
 .appearE {
     transform: translateY(100%);
-
 }
 
 .show {
     transform: translateY(10%);
 
     transition: 2s ease;
-
 }
 
 .show1 {
     transform: translateY(20%);
 
     transition: 2s ease;
-
 }
 
 .footer {
     width: 100%;
     height: 20vh;
-
 }
 
 .footer-container {
@@ -870,7 +759,6 @@ html {
     margin-left: auto;
     padding-left: 50px;
     padding-right: 50px;
-
 }
 
 .w-footer-layout {
@@ -891,7 +779,7 @@ html {
     position: relative;
     margin-bottom: 10vh;
     justify-content: left;
-    letter-spacing: 3PX;
+    letter-spacing: 3px;
 }
 
 .footer-Button {
@@ -901,8 +789,7 @@ html {
     font-style: normal;
     position: relative;
     margin-bottom: 10vh;
-    letter-spacing: 2PX;
-
+    letter-spacing: 2px;
 }
 
 #spinning-text {
@@ -922,7 +809,6 @@ html {
 
     border-radius: 100%;
     margin-top: 10vh;
-
 }
 
 .photo {
@@ -930,12 +816,11 @@ html {
     height: 300px;
     width: 300px;
     background: #000000;
-    /* background: url(images/zt.jpg); */
+    background: url(images/faceimage2.jpg);
+    background-size: cover;
     border-radius: 50%;
-
     border: 3px solid lime;
     border-radius: 100%;
-
 }
 
 .photo-text-spin {
@@ -945,12 +830,7 @@ html {
     animation: rotateText 10s linear infinite;
     /* border:3px solid lime; */
     border-radius: 100%;
-
-
-
-
-
-
+    padding-top: 50px;
 }
 
 .photo-text-spin span {
@@ -960,25 +840,13 @@ html {
     font-size: 1rem;
     margin-top: 9vh;
     transform-origin: 0 200px;
-
-
-
-
 }
 
 @keyframes rotateText {
     100% {
         transform: rotate(360deg);
-
-
     }
-
-
 }
-
-
-
-
 
 /* Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
