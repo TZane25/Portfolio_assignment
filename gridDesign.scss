@@ -1,9 +1,8 @@
 .grid {
     display: grid;
-    grid-gap: 16px;
-    grid-row-gap: 16px;
-    grid-column-gap: 16px;
-    padding: 16px;
+    grid-gap: 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
 
     @media (min-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
@@ -15,10 +14,11 @@
         grid-template-columns: repeat(4, 1fr);
     }
     .col {
-        background-color: white;
+        background-color: black;
     }
     .col img {
-        padding: 10px;
+        background-color: black;
+        padding: 5px;
         width: 100%;
         height: 100%;
     }
@@ -70,13 +70,13 @@
     padding-bottom: 5vh;
 
     @media (min-width: 768px) {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: minmax(1fr);
     }
     @media (min-width: 960px) {
-        grid-template-columns: repeat(2, 1fr 2fr);
+        grid-template-columns: minmax(1fr);
     }
     @media (min-width: 1200px) {
-        grid-template-columns: repeat(1, 1fr 2fr 1fr);
+        grid-template-columns: minmax(1fr);
     }
     .col {
         font-family: forma-djr-banner, sans-serif;
@@ -90,12 +90,12 @@
         padding-right: 2vh;
     }
     .col img {
-        border: 2px solid white;
+        border: 1px solid white;
         padding: 10px;
         width: 100%;
         height: 100%;
     }
-    
+
     .sub-header {
         color: white;
         font-family: forma-djr-banner, sans-serif;
@@ -120,8 +120,6 @@
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     padding-top: 20vh;
-   
-   
 
     .col {
         font-family: forma-djr-banner, sans-serif;
@@ -132,21 +130,17 @@
         padding-top: 5vh;
         padding-bottom: 10vh;
         border-bottom: 3px solid white;
-        
     }
     .coltext {
         justify-content: start;
         font-size: 5rem;
         letter-spacing: 4px;
         // border-bottom: 3px solid white;
-        
-
     }
-    .coltext img
-    {
+    .coltext img {
         width: 100%;
         height: 70%;
-        filter:invert(48%) sepia(40%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+        filter: invert(48%) sepia(40%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
         fill: white;
     }
     @media (min-width: 768px) {
@@ -159,13 +153,12 @@
         grid-template-columns: 2fr 1fr;
     }
 }
-.design-header{
+.design-header {
     display: grid;
     grid-gap: 10px;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     padding-top: 10vh;
-   
 
     @media (min-width: 768px) {
         grid-template-columns: 1fr 1fr;
@@ -183,22 +176,18 @@
         height: 70%;
         color: white;
         padding-top: 10vh;
-       
+
         padding-left: 2vh;
         padding-right: 2vh;
     }
-    .coltext
-    {
+    .coltext {
         padding-top: 5vh;
         justify-content: start;
         font-size: 2rem;
         letter-spacing: 4px;
-
     }
-
 }
-.design-grid
-{
+.design-grid {
     display: grid;
     grid-gap: 10px;
     grid-row-gap: 10px;
@@ -226,41 +215,30 @@
         padding-left: 2vh;
         padding-right: 2vh;
     }
-    .coltext
-    {
-        
+    .coltext {
         justify-content: start;
         font-size: 1rem;
         letter-spacing: 4px;
-        
-
     }
-    .coltext h2
-    {
+    .coltext h2 {
         justify-content: start;
         font-size: 2rem;
         font-family: forma-djr-banner, sans-serif;
         letter-spacing: 4px;
         color: white;
-        
-
     }
-    .coltext h3
-    {
+    .coltext h3 {
         justify-content: end;
         font-size: 1rem;
         font-family: forma-djr-banner, sans-serif;
         letter-spacing: 4px;
         color: white;
-        
-
     }
     .col img {
         border: 2px solid white;
         padding: 10px;
         width: 100%;
         height: 100%;
-        
     }
     .sub-header {
         color: white;
@@ -278,18 +256,14 @@
         align-items: center;
         text-align: center;
     }
-
 }
-.subDev-grid
-{
+.subDev-grid {
     display: grid;
     grid-gap: 10px;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     padding-top: 5vh;
     padding-bottom: 5vh;
-
-   
 
     .col {
         font-family: forma-djr-banner, sans-serif;
@@ -300,22 +274,17 @@
         padding-top: 5vh;
         padding-bottom: 10vh;
         border-bottom: 3px solid white;
-        
     }
     .coltext {
         justify-content: end;
         font-size: 5rem;
         letter-spacing: 4px;
         // border-bottom: 3px solid white;
-        
-
     }
-    .coltext img
-    {
+    .coltext img {
         width: 100%;
         height: 70%;
-        filter:invert(48%) sepia(40%) saturate(2300%) hue-rotate(86deg) brightness(118%) contrast(119%);
-        
+        filter: invert(48%) sepia(40%) saturate(2300%) hue-rotate(86deg) brightness(118%) contrast(119%);
     }
     @media (min-width: 768px) {
         grid-template-columns: 1fr 2fr;
@@ -326,11 +295,8 @@
     @media (min-width: 1200px) {
         grid-template-columns: 1fr 2fr;
     }
-
-
 }
-.proto-grid
-{
+.proto-grid {
     display: grid;
     grid-gap: 10px;
     grid-row-gap: 10px;
@@ -339,13 +305,13 @@
     padding-bottom: 5vh;
 
     @media (min-width: 768px) {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
     @media (min-width: 960px) {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
     @media (min-width: 1200px) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
     .col {
         font-family: forma-djr-banner, sans-serif;
@@ -357,42 +323,38 @@
         padding-left: 2vh;
         padding-right: 2vh;
     }
-    .coltext
-    {
+    .coltext {
         justify-content: start;
         font-size: 1rem;
         letter-spacing: 4px;
-        
-
     }
     .col img {
         border: 2px solid white;
         padding: 10px;
         width: 100%;
         height: 100%;
-        
     }
-    .coltext h2
-    {
+    .coltext h2 {
         justify-content: start;
         font-size: 2rem;
         font-family: forma-djr-banner, sans-serif;
         letter-spacing: 4px;
         color: white;
-        
-
     }
-
+    .col video {
+        border: 2px solid white;
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    }
 }
-.subdeploy-grid
-{
+.subdeploy-grid {
     display: grid;
     grid-gap: 10px;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     padding-top: 5vh;
     padding-bottom: 5vh;
-   
 
     .col {
         font-family: forma-djr-banner, sans-serif;
@@ -403,17 +365,16 @@
         padding-top: 5vh;
         padding-bottom: 10vh;
         border-bottom: 3px solid white;
-        
     }
     .coltext {
         justify-content: start;
         font-size: 5rem;
         letter-spacing: 4px;
-
-        
-
     }
-    
+    .col img {
+        -webkit-filter: invert(48%) sepia(40%) saturate(2300%) hue-rotate(86deg) brightness(118%) contrast(119%);
+        filter: invert(48%) sepia(40%) saturate(2300%) hue-rotate(86deg) brightness(118%) contrast(119%);
+    }
 
     @media (min-width: 768px) {
         grid-template-columns: 2fr 1fr;
@@ -424,24 +385,22 @@
     @media (min-width: 1200px) {
         grid-template-columns: 2fr 1fr;
     }
-   
 }
-.deploy-grid
-{ 
+.deploy-grid {
     display: grid;
     grid-gap: 10px;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
-    
+    padding-bottom: 10vh;
 
     @media (min-width: 768px) {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: minmax(1fr);
     }
     @media (min-width: 960px) {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: minmax(1fr);
     }
     @media (min-width: 1200px) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: minmax(1fr);
     }
     .col {
         font-family: forma-djr-banner, sans-serif;
@@ -453,44 +412,35 @@
         padding-left: 2vh;
         padding-right: 2vh;
     }
-    .coltext
-    {
+    .coltext {
         justify-content: start;
         font-size: 1rem;
         letter-spacing: 4px;
-        
-
     }
     .col img {
         border: 2px solid white;
         padding: 10px;
         width: 100%;
         height: 100%;
-        
     }
-    .coltext h2
-    {
+    .coltext h2 {
         justify-content: start;
         font-size: 2rem;
         font-family: forma-djr-banner, sans-serif;
         letter-spacing: 4px;
         color: white;
-        
-
     }
-    
-
+    .deploy-subtext {
+        padding-top: 10vh;
+    }
 }
-.subcar-grid
-{
+.subcar-grid {
     display: grid;
     grid-gap: 10px;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     padding-top: 5vh;
     padding-bottom: 5vh;
-
-   
 
     .col {
         font-family: forma-djr-banner, sans-serif;
@@ -501,16 +451,13 @@
         padding-top: 5vh;
         padding-bottom: 15vh;
         border-bottom: 3px solid white;
-        
     }
     .coltext {
         justify-content: end;
         font-size: 4rem;
         letter-spacing: 4px;
-        
-        // border-bottom: 3px solid white;
-        
 
+        // border-bottom: 3px solid white;
     }
     @media (min-width: 768px) {
         grid-template-columns: 1fr;
@@ -521,18 +468,15 @@
     @media (min-width: 1200px) {
         grid-template-columns: 2fr;
     }
-
-
 }
-.carousel-grid
-{
+.carousel-grid {
     display: grid;
     grid-gap: 10px;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     padding-top: 5vh;
     padding-bottom: 5vh;
-       
+
     @media (min-width: 768px) {
         grid-template-columns: 1fr;
     }
@@ -542,27 +486,22 @@
     @media (min-width: 1200px) {
         grid-template-columns: 1fr;
     }
-    .space
-    {
+    .space {
         padding-top: 5vh;
         padding-bottom: 5vh;
         padding-left: 2vw;
         padding-right: 2vw;
     }
-
-
-
 }
 
-.footer-grid
-{
+.footer-grid {
     display: grid;
     grid-gap: 10px;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     padding-top: 5vh;
     padding-bottom: 5vh;
-       
+
     @media (min-width: 768px) {
         grid-template-columns: 1fr;
     }
@@ -582,18 +521,13 @@
         padding-top: 5vh;
         padding-bottom: 15vh;
         border-top: 3px solid white;
-        
     }
     .coltext {
         justify-content: end;
         font-size: 2rem;
         letter-spacing: 4px;
-        
-        
-        
-
     }
-
 }
+
 
 
