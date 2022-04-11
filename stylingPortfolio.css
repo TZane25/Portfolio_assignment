@@ -9,12 +9,10 @@
     font-family: fino-sans, sans-serif;
     color: var(--var-color-one);
     scroll-behavior: smooth;
-
 }
 
 body,
 html {
-
     background-color: var(--var-color-three);
     width: 100%;
     height: auto;
@@ -26,13 +24,7 @@ html {
     justify-content: center;
     align-items: center;
     height: 100vh;
-   
-    
-
-
 }
-
-
 
 :root {
     --var-color-one: #212121;
@@ -54,6 +46,7 @@ html {
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: whitesmoke;
+
     /* border-radius: 10px; */
 }
 
@@ -62,16 +55,11 @@ html {
     background: lime;
 }
 
-
 #NameBrand {
     font-family: fino-sans, sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: larger;
-
-
-
-
 }
 
 #TopNav {
@@ -80,18 +68,14 @@ html {
 
     position: sticky;
     background-color: var(--var-color-three);
-
-
 }
 
 #TopNav a {
-
     font-family: fino-sans, sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: larger;
     justify-content: left;
-
 }
 
 #TopNav a:hover {
@@ -99,29 +83,24 @@ html {
 
     filter: dropshadow(color=#000000, offx=3, offy=3);
     border-bottom: 3px solid white;
-
 }
 
-.cursor
-{
-
+.cursor {
     position: fixed;
     border-radius: 100%;
     transform: translateX(-50%) translateY(-50%);
-    pointer-events:none;
-    /* left: -100px;
-    top: 50%; */
+    pointer-events: none;
+    left: -100px;
+    top: 50%;
     mix-blend-mode: difference;
-    background-color: 
-  white;
+    background-color: white;
     z-index: 10000;
-    border: 3px solid 
-  white;
+    border: 3px solid white;
     height: 60px;
     width: 60px;
     transition: all 300ms ease-in;
-    /* transition: transform 0.3s ease; */
-
+    transition: transform 0.3s ease;
+    pointer-events: all;
 }
 
 .header-container {
@@ -134,8 +113,6 @@ html {
     align-items: center;
     justify-content: center;
     text-align: center;
-
-
 }
 
 .layout-container {
@@ -151,23 +128,18 @@ html {
 .Header-text {
     font-size: 10rem;
     color: var(--var-color-two);
-
 }
 
 .Sub-text {
     font-size: 4rem;
     color: var(--var-color-two);
     font-family: forma-djr-banner, sans-serif;
-
-
-
 }
 
 .spacing {
     padding-top: 5vh;
     padding-bottom: 1vh;
     border-bottom: 2px solid white;
-
 }
 
 /* .project-Details-container
@@ -198,27 +170,17 @@ html {
     justify-content: start;
     text-align: start;
     padding-left: 1rem;
-
 }
 
 .develop {
     justify-content: flex-end;
     text-align: end;
     padding-right: 1rem;
-
 }
 
-.deploy{
+.deploy {
     justify-content: start;
     text-align: start;
-    
-
 }
 
-
-
-
-
-
 /* grid done in scss file for neatness */
-
