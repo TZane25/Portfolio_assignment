@@ -8,12 +8,13 @@
     list-style: none;
     font-family: fino-sans, sans-serif;
     color: var(--var-color-two);
+    
     scroll-behavior: smooth;
 }
 
 body,
 html {
-    background-color: var(--var-color-two);
+    background-color: var(--var-color-one);
     width: 100%;
     height: auto;
     display: inline-block;
@@ -25,6 +26,11 @@ html {
     align-items: center;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
 /* width */
 ::-webkit-scrollbar {
     width: 20px;
@@ -80,6 +86,10 @@ html {
 }
 
 #cursor {
+
+
+
+
     position: fixed;
     border-radius: 100%;
     transform: translateX(-50%) translateY(-50%);
@@ -122,7 +132,7 @@ html {
 .reveal ul {
     top: 200vh;
     display: block;
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: 4rem;
 }
 
@@ -130,9 +140,9 @@ html {
     height: 4rem;
     display: flex;
     overflow: hidden;
-    margin-bottom: 0.6rem;
+    margin-bottom: 2rem;
 
-    justify-content: flex-start;
+    justify-content: center;
     margin: 0.3rem;
 
     color: lime;
@@ -143,11 +153,11 @@ html {
     line-height: 4rem;
     font-size: 5rem;
     transform: translateY(100%);
-    justify-content: flex-start;
+    justify-content: center;
     font-family: forma-djr-banner, sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding-bottom: 10vh;
+    padding-bottom: 12vh;
 }
 
 .reveal ul li span.active {
@@ -177,19 +187,24 @@ html {
     height: 100vh;
     overflow: hidden;
     pointer-events: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 #infinite h1 {
     position: relative;
-    top: 30vh;
-    left: 2vw;
+    top: 47vh;
+    left:1vw;
+    
     width: 100%;
 
     text-align: center;
-    font-size: 6rem;
+    font-size: 7rem;
     letter-spacing: 2px;
     z-index: 2;
     pointer-events: none;
+    justify-content: center;
 }
 
 #infinite .scroll {
@@ -235,13 +250,15 @@ html {
 }
 
 #infinite .scroll.text2 {
-    transform: rotate(-380deg) translateY(200px) translateX(-200px);
+    transform: rotate(-400deg) translateY(300px) translateX(-300px) translateZ(100deg);
     box-shadow: 0 5px 15px rgna(0, 0, 0, 0.5);
+    padding-bottom: 10vh;
 }
 
 #infinite .scroll.text3 {
-    transform: rotate(-380deg) translateY(-200px) translateX(-200px);
+    transform: rotate(400deg) translateY(300px) translateX(400px) translateZ(100deg);
     box-shadow: 0 5px 15px rgna(0, 0, 0, 0.5);
+    padding-top: 50vh;
 }
 
 #infinite .scroll.text4 {
@@ -645,16 +662,14 @@ html {
     font-weight: 200;
     font-style: normal;
     letter-spacing: 3px;
-   
 }
-.nodeco a{
+.nodeco a {
     text-decoration: none;
-    color:white;
+    color: white;
     font-family: forma-djr-banner, sans-serif;
     font-weight: 200;
     font-style: normal;
     letter-spacing: 3px;
-    
 }
 .design-info {
     display: inline-block;
@@ -662,7 +677,6 @@ html {
     text-align: left;
     margin-top: 10vh;
     margin-bottom: 10vh;
-    
 }
 
 .about {
@@ -847,6 +861,8 @@ html {
         transform: rotate(360deg);
     }
 }
+
+
 
 /* Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
