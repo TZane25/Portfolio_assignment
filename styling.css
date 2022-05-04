@@ -252,7 +252,7 @@ html {
 #infinite .scroll.text2 {
     transform: rotate(-400deg) translateY(300px) translateX(-300px) translateZ(100deg);
     box-shadow: 0 5px 15px rgna(0, 0, 0, 0.5);
-    padding-bottom: 25vh;
+    padding-bottom: 20vh;
 }
 
 #infinite .scroll.text3 {
