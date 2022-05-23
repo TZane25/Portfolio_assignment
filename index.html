@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styling.css" rel="stylesheet">
+   
 
 
     <!-- Add Bootstrap CSS here -->
@@ -54,7 +55,7 @@
 <body>
 
 
-    <div class="container">
+    <div class="container-fluid">
 
 
 
@@ -64,7 +65,7 @@
             <h1>
                 HELLO!
             </h1>
-<!-- 
+            <!-- 
             <div class="scroll text1">
 
                 <div>
@@ -159,7 +160,7 @@
 
 
 
-            <div class="reveal">
+            <div class="reveal responsive">
 
 
 
@@ -184,10 +185,10 @@
                         <span>VR/AR/MR DEVELOPER</span>
                     </li>
                     <li>
-                        <span>WEB / MOBILE APP DEVELOPER</span>
+                        <span>WEB APP DEVELOPER</span>
                     </li>
                     <li>
-                        <span>BASED AND ESTABLISHED IN SINGAPORE</span>
+                        <span>ESTABLISHED IN SINGAPORE</span>
                     </li>
 
 
@@ -204,7 +205,7 @@
     </div>
 
     <!-- about me part  -->
-    <div class="container px-5 py-5">
+    <div class="container-fluid px-5 py-5">
         <div class="row">
             <div class="portfolio appear">
 
@@ -214,7 +215,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="about P-section">
             <div class="about-container">
                 <div class="about-grid w-layout-grid">
@@ -260,14 +261,14 @@
                         <div class="textLine" style="font-family:   forma-djr-banner, sans-serif;">
                             My plan currently is to enter a university to pursue my degree but at the same
                             time freelance for some extra experience and exposure to help improve my portfolio
-                        </div> 
+                        </div>
 
                         <br>
                         <br>
 
                         <div class="textLine" style="font-family:   forma-djr-banner, sans-serif;">
-                            Skills - ADOBE XD, ILLUSTRATOR, PHOTOSHOP, HTML, CSS, JAVASCRIPT. 
-                        </div> 
+                            Skills - ADOBE XD, ILLUSTRATOR, PHOTOSHOP, HTML, CSS, JAVASCRIPT.
+                        </div>
 
 
 
@@ -290,7 +291,7 @@
 
 
 
-    <div class="container px-5 py-5">
+    <div class="container-fluid px-5 py-5">
         <div class="row">
             <div class="portfolio appear">
 
@@ -301,7 +302,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container-fluid responsive">
 
         <div class="container-fluid">
 
@@ -339,7 +340,7 @@
                     </a>
 
                     <a href="PortfolioProject5.html" style="text-decoration: none;"
-                        class="gallery-card offset-md-3 w-inline-block appear">
+                        class="gallery-card  w-inline-block appear">
                         <div class="gallery-card-title">
                             <h2 class="heading ">HTML/CSS</h2>
                             <div class="headingDate ">(2021)</div>
@@ -399,7 +400,7 @@
 
 
                     <a href="PortfolioProject3.html" style="text-decoration: none;"
-                        class="gallery-card offset-md-3 w-inline-block appear">
+                        class="gallery-card  w-inline-block appear">
                         <div class="gallery-card-title">
                             <h2 class="heading">UI DESIGN</h2>
                             <div class="headingDate">(2021)</div>
@@ -455,7 +456,7 @@
                     </a>
 
                     <a href="PortfolioProject4.html" style="text-decoration: none;"
-                        class="gallery-card offset-md-3 w-inline-block appear">
+                        class="gallery-card  w-inline-block appear">
                         <div class="gallery-card-title">
                             <h2 class="heading">DESIGNS</h2>
                             <div class="headingDate">(2021)</div>
@@ -509,8 +510,7 @@
 
                     </a>
 
-                    <a href="#" style="text-decoration: none;"
-                        class="gallery-card offset-md-3 w-inline-block appear">
+                    <a href="#" style="text-decoration: none;" class="gallery-card w-inline-block appear">
                         <div class="gallery-card-title">
                             <h2 class="heading">PHP</h2>
                             <div class="headingDate">(2021)</div>
@@ -536,7 +536,7 @@
 
                     </a>
 
-                    
+
 
 
                 </div>
@@ -550,7 +550,7 @@
     </div>
 
 
-    <div class="container">
+    <div class="container-fluid">
 
         <section class="extra-information" id="extra">
 
@@ -660,7 +660,7 @@
 
     <section>
 
-        <div class="container">
+        <div class="container-fluid">
 
             <footer class="footer">
                 <div class="footer-container w-footer-layout">
@@ -698,177 +698,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="script.js"></script>
     <!-- <script src="showAboutText.js"></script> -->
     <!-- 
         <script src="sliding.js"></script> -->
     <!-- <script src="textUpflow.js"></script> -->
 
-
-    <script>
-
-
-        var cursor = document.getElementById('cursor'); // cursor follow
-
-        document.addEventListener('mousemove', function (e) {
-            var x = e.clientX;
-            var y = e.clientY;
-            cursor.style.left = x + "px";
-            cursor.style.top = y + "px";
-
-
-        });
-
-        $(document).ready(function () {
-            var scroll_pos = 0;
-            $(document).scroll(function () {
-                scroll_pos = $(this).scrollTop();
-                if (scroll_pos > 1800) { // if scroll past a certain pixel
-                    $("body").css('background-color', '#16161d'); // change the bottom color // elgengroid
-
-                } 
-                else {
-                    $("body").css('background-color', '#0D0D0D'); // black
-
-
-                }
-            });
-        });
-        let listItems = [...document.querySelectorAll('.reveal li')]; // spread function all list items into an array 
-
-
-        let options = {
-            rootMargin: '-10%',
-            // threshold: 0.0
-        }
-        let observer = new IntersectionObserver(showItem, options);//function triggered when items come into view port
-
-        function showItem(entries) {
-
-            entries.forEach(entry => {
-                console.log(entries);
-                if (entry.isIntersecting) // child element is the span
-                {
-                    entry.target.children[0].classList.add('active');
-                    observer.unobserve(entry.target);
-                }
-                else {
-                    return;
-                }
-
-            })
-
-        }
-
-        listItems.forEach(item => { //split all the ltters up into indi spans, to perform seperate animations
-
-            observer.observe(item);
-
-        })
-
-
-
-
-
-
-
-        let showing = [...document.querySelectorAll('.appear')]; // spread function all list items into an array 
-
-        let options2 = {
-            rootMargin: '40%',
-            // threshold: 0.0
-        }
-        let observer1 = new IntersectionObserver(showItems, options2);//function triggered when items come into view port
-
-        function showItems(entries1) {
-
-            entries1.forEach(entry1 => {
-                if (entry1.isIntersecting) // child element is the span
-                {
-                    entry1.target.classList.add('show');
-                    observer1.unobserve(entry.target);
-                }
-                else {
-                    return;
-                }
-
-            })
-
-        }
-
-        showing.forEach(item1 => { //split all the ltters up into indi spans, to perform seperate animations
-
-            observer1.observe(item1);
-
-        })
-
-
-
-
-
-
-
-
-
-        let showingEarlier = [...document.querySelectorAll('.appearE')]; // spread function all list items into an array 
-
-        let options3 = {
-            rootMargin: '20%',
-            threshold: 0.0
-        }
-        let observer2 = new IntersectionObserver(showItems, options3);//function triggered when items come into view port
-
-        function showItems(entries2) {
-
-            entries2.forEach(entry2 => {
-                if (entry2.isIntersecting) // child element is the span
-                {
-                    entry2.target.classList.add('show1');
-                    observer2.unobserve(entry2.target);
-                }
-                else {
-                    return;
-                }
-
-            })
-
-        }
-
-        showingEarlier.forEach(item2 => { //split all the ltters up into indi spans, to perform seperate animations
-
-            observer2.observe(item2);
-
-        })
-
-
-
-
-
-
-        //button goes to top of the page
-
-        function topFunction() {
-
-            $('html, body').animate({ scrollTop: 0 }, 'slow'); // top function
-        }
-
-
-
-        const text = document.querySelector('.photo-text-spin p'); // select the paragraph with the words and assign to constant called text
-        text.innerHTML = text.innerText.split("").map(  // split  by the spaces and map to new element
-            (char, i) => // takig in the characters present in the words and assigning it to i 
-                `<span style="transform:rotate(${i * 8}deg)" > ${char} </span>` // formig new span element  with style transform and put the seperated characters in the span element andd style based on the css
-        ).join(" ") // join my the spaces
-
-
-
-
-
-
-
-
-
-
-    </script>
 
 
 
