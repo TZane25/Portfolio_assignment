@@ -32,29 +32,29 @@ let listItems = [...document.querySelectorAll('.reveal li')]; // spread function
 
 
 let options = {
-    rootMargin: '-10%',
-    // threshold: 0.0
+    rootMargin: '-40%', // 40% down from the view port the function will take effet 
+    
 }
 let observer = new IntersectionObserver(showItem, options); //function triggered when items come into view port
 
-function showItem(entries) {
-
-    entries.forEach(entry => {
-        console.log(entries);
+function showItem(entries) { // variable entries 
+ 
+    entries.forEach(entry => { // for each 
+        console.log(entries); // check if the js is in tact
         if (entry.isIntersecting)  // child element is the span
         {
-            entry.target.children[0].classList.add('active'); // adding the class from css file
+            entry.target.children[0].classList.add('active'); // adding the class from css file to the child which is the span
             observer.unobserve(entry.target); // when leaves viewport
         }
         else {
-            return;
+            return; // return value 
         }
 
     })
 
 }
 
-listItems.forEach(item => { 
+listItems.forEach(item => {  // check if the items are passing through 
     observer.observe(item);
 
 })
@@ -69,7 +69,7 @@ let showing = [...document.querySelectorAll('.appear')]; // spread function all 
 
 let options2 = {
     rootMargin: '40%',
-    // threshold: 0.0
+
 }
 let observer1 = new IntersectionObserver(showItems, options2);//function triggered when items come into view port
 
@@ -78,11 +78,11 @@ function showItems(entries1) {
     entries1.forEach(entry1 => {
         if (entry1.isIntersecting) // child element is the span
         {
-            entry1.target.classList.add('show');
-            observer1.unobserve(entry.target);
+            entry1.target.classList.add('show'); // add the show element in the css which brings up the item
+            observer1.unobserve(entry.target); // when leaves the view port
         }
         else {
-            return;
+            return; // return the
         }
 
     })
@@ -91,14 +91,9 @@ function showItems(entries1) {
 
 showing.forEach(item1 => {
 
-    observer1.observe(item1);
+    observer1.observe(item1); // check if the items are passing through  // loop fo robserver to check
 
 })
-
-
-
-
-
 
 
 
@@ -106,7 +101,7 @@ showing.forEach(item1 => {
 let showingEarlier = [...document.querySelectorAll('.appearE')]; // spread function all list items into an array 
 
 let options3 = {
-    rootMargin: '20%',
+    rootMargin: '20%', // pushes it down from the current px of the view port
     threshold: 0.0
 }
 let observer2 = new IntersectionObserver(showItems, options3);//function triggered when items come into view port
@@ -127,9 +122,9 @@ function showItems(entries2) {
 
 }
 
-showingEarlier.forEach(item2 => {
+showingEarlier.forEach(item2 => { 
 
-    observer2.observe(item2);
+    observer2.observe(item2); // check for every item in the list of showingearlier 
 
 })
 
