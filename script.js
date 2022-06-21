@@ -1,20 +1,17 @@
-$(document).ready(function () {
 
-   
+var scroll_pos = 0;
+$(document).scroll(function () {
+    scroll_pos = $(this).scrollTop();
+    if (scroll_pos > 1800) { // if scroll past a certain pixel
 
-    var scroll_pos = 0;
-    $(document).scroll(function () {
-        scroll_pos = $(this).scrollTop();
-        if (scroll_pos > 1800) { // if scroll past a certain pixel
-            $("body").css('background-color', '#16161d'); // change the bottom color // elgengroid
+        $("body").css('background-color', '#16161d'); // change the bottom color // elgengroid
 
-        }
-        else {
-            $("body").css('background-color', '#0D0D0D'); // black
+    }
+    else {
+        $("body").css('background-color', '#0D0D0D'); // black
 
 
-        }
-    });
+    }
 });
 
 
@@ -38,16 +35,16 @@ let options = {
     rootMargin: '-10%',
     // threshold: 0.0
 }
-let observer = new IntersectionObserver(showItem, options);//function triggered when items come into view port
+let observer = new IntersectionObserver(showItem, options); //function triggered when items come into view port
 
 function showItem(entries) {
 
     entries.forEach(entry => {
         console.log(entries);
-        if (entry.isIntersecting) // child element is the span
+        if (entry.isIntersecting)  // child element is the span
         {
-            entry.target.children[0].classList.add('active');
-            observer.unobserve(entry.target);
+            entry.target.children[0].classList.add('active'); // adding the class from css file
+            observer.unobserve(entry.target); // when leaves viewport
         }
         else {
             return;
@@ -57,8 +54,7 @@ function showItem(entries) {
 
 }
 
-listItems.forEach(item => { //split all the ltters up into indi spans, to perform seperate animations
-
+listItems.forEach(item => { 
     observer.observe(item);
 
 })
@@ -93,7 +89,7 @@ function showItems(entries1) {
 
 }
 
-showing.forEach(item1 => { //split all the ltters up into indi spans, to perform seperate animations
+showing.forEach(item1 => {
 
     observer1.observe(item1);
 
@@ -131,14 +127,11 @@ function showItems(entries2) {
 
 }
 
-showingEarlier.forEach(item2 => { //split all the ltters up into indi spans, to perform seperate animations
+showingEarlier.forEach(item2 => {
 
     observer2.observe(item2);
 
 })
-
-
-
 
 
 
@@ -149,13 +142,6 @@ function topFunction() {
     $('html, body').animate({ scrollTop: 0 }, 'slow'); // top function
 }
 
-
-
-const text = document.querySelector('.photo-text-spin p'); // select the paragraph with the words and assign to constant called text
-text.innerHTML = text.innerText.split("").map(  // split  by the spaces and map to new element
-    (char, i) => // takig in the characters present in the words and assigning it to i 
-        `<span style="transform:rotate(${i * 8}deg)" > ${char} </span>` // formig new span element  with style transform and put the seperated characters in the span element andd style based on the css
-).join(" ") // join my the spaces
 
 
 
